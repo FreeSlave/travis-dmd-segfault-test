@@ -1,0 +1,13 @@
+{
+    "name": "desktopfile",
+    "description": "Desktop Entry Specification implementation",
+    "license" : "BSL-1.0",
+    "copyright": "Copyright © 2015-2016, Roman Chistokhodov",
+    "authors": ["Roman Chistokhodov"],
+    "dependencies": {
+        "inilike": "~>1.0.0"
+    },
+    "targetName" : "desktopfile",
+    "targetPath" : "lib",
+    "targetType" : "library",
+}
