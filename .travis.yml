@@ -11,4 +11,4 @@ d:
     - dmd-2.076.1
 
 script:
-    - cd desktopfile && dub add-override ../inilike 1.0.1 && dub test
+    - cd desktopfile && dub add-override inilike 1.0.1 ../inilike && dub test
