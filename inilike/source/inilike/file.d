@@ -1,6 +1,6 @@
 module inilike.file;
 
-import std.algorithm : map;
+
 struct ListMap(K,V, size_t chunkSize = 32)
 {
     @disable this(this);
@@ -48,7 +48,7 @@ struct ListMap(K,V, size_t chunkSize = 32)
     }
 
     auto byEntry() const {
-
+        import std.algorithm : map;
         return byNode().map!(node => node.toEntry());
     }
 
@@ -181,6 +181,7 @@ public:
     }
 
     @trusted auto byNode() {
+        import std.algorithm : map;
         return _listMap.byNode().map!(node => lineNode(node));
     }
 
